@@ -1,0 +1,51 @@
+//
+// user.scss
+// Use this to write your custom SCSS
+//
+
+.animated-under-text {
+  color: white;
+	background: linear-gradient(-45deg, #FFE600, #FAAD14, #F7169C, #3435F5);
+	background-size: 400% 400%;
+	animation: gradientBG 15s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-position: center center;
+}
+.animated-background {
+	background: linear-gradient(-45deg, #FFE600, #FAAD14, #F7169C, #3435F5);
+	background-size: 400% 400%;
+	animation: gradientBG 15s ease infinite;
+}
+.bg-black-curved{
+  background-color:transparent!important;
+  background-image:radial-gradient(#100e17, #000 70%, transparent 70.1%);
+  background-repeat:no-repeat;
+  background-position:bottom;
+  background-size:200% 150%;
+}
+
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.link-underlined, .link-underlined:visited, .link-underlined:active {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px #fff dotted;
+  line-height: 180%;
+}
+
+.link-underlined:hover {
+  color: #f2f2f2;
+  text-decoration: none;
+  border-bottom: 1px #f2f2f2 solid;
+}
